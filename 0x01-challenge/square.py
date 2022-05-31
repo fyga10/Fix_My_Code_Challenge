@@ -1,39 +1,27 @@
 #!/usr/bin/python3
-"""
-I love geometry!
-"""
+"""I love geometry!"""
 
 
 class square():
-    """
-    Geometry class.
-    """
+    """Geometry class."""
     width = 0
     height = 0
 
     def __init__(self, *args, **kwargs):
-        """
-        Init sequence.
-        """
+        """Init sequence."""
         for key, value in kwargs.items():
             setattr(self, key, value)
 
     def area(self):
-        """
-        squares Area
-        """
+        """squares Area"""
         return self.width * self.height
 
     def perimeter(self):
-        """
-        squares Perimeter
-        """
+        """squares Perimeter"""
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
-        """
-        representation.
-        """
+        """representation."""
         return "{}/{}".format(self.width, self.height)
 
 if __name__ == "__main__":
